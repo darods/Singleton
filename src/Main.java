@@ -28,16 +28,17 @@ public class Main {
 
         hilo1.start();
         hilo2.start();
+
         System.out.println("digite 0 para A o 1 para B : ");
+
         int opcion = s.nextByte();
         if (opcion == 0){
-            SingletonPadre singletonHerencia = new SingletonA();
-            singletonHerencia.getInstance();
+
+            SingletonPadre singletonHerencia = SingletonA.getInstance();
             singletonHerencia.setMensaje("hola");
             System.out.println(singletonHerencia.getMensaje());
         } else if(opcion == 1){
-            SingletonPadre singletonHerencia = new SingletonB();
-            singletonHerencia.getInstance();
+            SingletonPadre singletonHerencia = SingletonB.getInstance();
             singletonHerencia.setMensaje("hola");
             System.out.println(singletonHerencia.getMensaje());
         }

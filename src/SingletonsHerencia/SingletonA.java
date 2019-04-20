@@ -2,17 +2,17 @@ package SingletonsHerencia;
 
 public class SingletonA extends SingletonPadre{
 
-    @Override
-    public  SingletonPadre getInstance() {
-        if (singleton == null){
+    private static SingletonA singleton;
+
+    public static synchronized SingletonPadre getInstance(){
+        if(singleton == null){
             singleton = new SingletonA();
         }
         return singleton;
     }
-
     @Override
     public void setMensaje(String mensaje) {
-        this.mensaje = mensaje;
+        this.mensaje = mensaje + " este es el singleton A";
     }
 
     @Override

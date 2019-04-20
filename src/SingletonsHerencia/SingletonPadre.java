@@ -1,14 +1,23 @@
 package SingletonsHerencia;
 
-public abstract class SingletonPadre {
-    protected SingletonPadre singleton = null;
+public class SingletonPadre {
+    private static SingletonPadre singleton = null;
     protected String mensaje;
 
     protected SingletonPadre(){}
 
-    public abstract  SingletonPadre getInstance();
+    public static synchronized SingletonPadre getInstance(){
+        if(singleton == null){
+            singleton = new SingletonPadre();
+        }
+        return singleton;
+    }
 
-    public abstract void setMensaje(String a);
-    public abstract String getMensaje();
+    public void setMensaje(String a){
+        mensaje = a;
+    }
+    public String getMensaje(){
+        return mensaje;
+    }
 
 }

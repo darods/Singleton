@@ -17,3 +17,14 @@ relacionados con su uso en ambientes _multihilo_ o con _herencia_.
 
 * latincoder. [Singleton - patrones de diseño de software en Java.](https://www.youtube.com/watch?v=Z06Phxtj13g&t=88s)
 17 jun 2014.
+
+####Para despues :
+
+https://stackoverflow.com/questions/16270353/extending-a-singleton-in-java
+
+https://coderanch.com/t/536696/java/Extending-Singleton-Class
+
+https://stackoverflow.com/questions/9876781/is-extending-a-singleton-class-wrong
+
+https://www.youtube.com/watch?v=LqAyHQeF5Qk
+
