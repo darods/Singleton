@@ -1,4 +1,4 @@
-#Singleton y solución a algunos problemas
+# Singleton y solución a algunos problemas
 
 Este codigo es un proyecto para modelos 1, en el cual hago una 
 implementación del patron Singleton y se da solución a los problemas
@@ -6,7 +6,7 @@ relacionados con su uso en ambientes _multihilo_ o con _herencia_.
 
 Investigación y código hechos por _Daniel Alejandro Rodriguez, 2019_
 
-###Fuentes:
+### Fuentes:
 
 * Javatholn Java Training. [Thread-safe singleton implementation in Java.](https://www.youtube.com/watch?v=zUYLY8kYavs)
 13 oct 2014.
