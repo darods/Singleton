@@ -1,5 +1,12 @@
+import SingletonsHerencia.SingletonA;
+import SingletonsHerencia.SingletonB;
+import SingletonsHerencia.SingletonPadre;
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
 
         Thread hilo1 = new Thread(new Runnable() {
             @Override
@@ -21,5 +28,22 @@ public class Main {
 
         hilo1.start();
         hilo2.start();
+        System.out.println("digite 0 para A o 1 para B : ");
+        int opcion = s.nextByte();
+        if (opcion == 0){
+            SingletonPadre singletonHerencia = new SingletonA();
+            singletonHerencia.getInstance();
+            singletonHerencia.setMensaje("hola");
+            System.out.println(singletonHerencia.getMensaje());
+        } else if(opcion == 1){
+            SingletonPadre singletonHerencia = new SingletonB();
+            singletonHerencia.getInstance();
+            singletonHerencia.setMensaje("hola");
+            System.out.println(singletonHerencia.getMensaje());
+        }
+
+
+
+
     }
 }
